@@ -2,7 +2,7 @@
 import pandas as pd
 from sklearn import preprocessing
 from pickle import dump
-data = pd.read_csv('/content/BostonHousing.csv', sep = ';')
+data = pd.read_csv('/dados_normalizar.csv', sep = ';')
 #normalizacao
 data_normalized = (data - data.min()) / (data.max() - data.min())
 #padronizacao
