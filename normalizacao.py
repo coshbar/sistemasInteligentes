@@ -11,5 +11,4 @@ data_patterned = (data - data.mean()) / data.std()
 normalizer = preprocessing.MinMaxScaler()
 normalized_data_model = normalizer.fit(data)
 #salvar
-dump(normalized_data_model, open('normalized_data_model', 'wb')
-)
+dump(normalized_data_model, open('normalized_data_model', 'wb'))
